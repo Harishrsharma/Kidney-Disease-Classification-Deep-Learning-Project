@@ -12,31 +12,51 @@ import base64
 
 
 
+# @ensure_annotations
+# def read_yaml(path_to_yaml: Path) -> ConfigBox:
+#     """reads yaml file and returns
+
+#     Args:
+#         path_to_yaml (str): path like input
+
+#     Raises:
+#         ValueError: if yaml file is empty
+#         e: empty file
+
+#     Returns:
+#         ConfigBox: ConfigBox type
+#     """
+#     try:
+#         with open(path_to_yaml) as yaml_file:
+#             content = yaml.safe_load(yaml_file)
+#             logger.info(f"yaml file: {path_to_yaml} loaded successfully")
+#             return ConfigBox(content)
+#     except BoxValueError:
+#         raise ValueError("yaml file is empty")
+#     except Exception as e:
+#         raise e
+    
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
-    """reads yaml file and returns
-
-    Args:
-        path_to_yaml (str): path like input
-
-    Raises:
-        ValueError: if yaml file is empty
-        e: empty file
-
-    Returns:
-        ConfigBox: ConfigBox type
-    """
+    """Reads a YAML file and returns a ConfigBox."""
     try:
-        with open(path_to_yaml) as yaml_file:
+        path_to_yaml = Path(path_to_yaml)
+        if not path_to_yaml.exists():
+            raise FileNotFoundError(f"YAML file not found: {path_to_yaml.resolve()}")
+
+        with open(path_to_yaml, "r", encoding="utf-8") as yaml_file:
             content = yaml.safe_load(yaml_file)
-            logger.info(f"yaml file: {path_to_yaml} loaded successfully")
-            return ConfigBox(content)
+
+        if content is None:
+            raise ValueError(f"YAML file is empty or invalid: {path_to_yaml.resolve()}")
+
+        logger.info(f"YAML file loaded successfully: {path_to_yaml.resolve()}")
+        return ConfigBox(content)
+
     except BoxValueError:
-        raise ValueError("yaml file is empty")
+        raise ValueError(f"YAML file is empty or malformed: {path_to_yaml.resolve()}")
     except Exception as e:
         raise e
-    
-
 
 @ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):

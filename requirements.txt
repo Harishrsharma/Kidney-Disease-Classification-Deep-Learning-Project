@@ -6,7 +6,7 @@ notebook
 numpy
 matplotlib
 seaborn
-python-box
+python-box #used to create exception
 pyYAML
 tqdm
 ensure
