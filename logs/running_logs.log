@@ -34,3 +34,41 @@
 [2025-10-05 11:31:10,926: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2025-10-05 14:08:59,546: INFO: font_manager: generated new fontManager]
+[2025-10-05 14:13:41,640: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-05 14:13:41,668: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-05 14:13:41,671: INFO: common: created directory at: artifacts]
+[2025-10-05 14:13:41,676: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-05 14:14:19,871: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-10-05 14:14:20,104: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-10-05 14:23:47,032: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-10-05 14:23:47,035: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-05 14:23:47,037: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-05 14:23:47,037: INFO: common: created directory at: artifacts]
+[2025-10-05 14:23:47,038: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-05 14:23:47,039: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-05 14:24:34,075: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-05 14:24:35,199: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-10-05 14:25:11,303: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-10-05 14:25:11,305: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-05 14:25:11,307: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-05 14:25:11,307: INFO: common: created directory at: artifacts]
+[2025-10-05 14:25:11,308: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-05 14:25:11,308: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-05 14:25:48,012: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-05 14:25:48,602: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-10-05 14:25:48,602: INFO: main: *******************]
+[2025-10-05 14:25:48,603: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-10-05 14:25:48,605: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-05 14:25:48,606: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-05 14:25:48,607: INFO: common: created directory at: artifacts]
+[2025-10-05 14:25:48,607: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-05 14:25:49,200: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-10-05 14:25:49,398: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-10-05 14:25:49,598: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
