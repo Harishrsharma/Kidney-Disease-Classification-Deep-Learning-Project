@@ -21,6 +21,19 @@ from cnnClassifier import logger
 from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline 
 from cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from cnnClassifier.pipeline.stage_03_model_training import ModelTrainingPipeline
+from cnnClassifier.pipeline.stage_04_model_evalutaion import EvaluationPipeline
+
+import mlflow
+mlflow.set_tracking_uri("https://dagshub.com/Harishrsharma/Kidney-Disease-Classification-Deep-Learning-Project.mlflow")
+
+import dagshub
+dagshub.init(repo_owner='Harishrsharma', repo_name='Kidney-Disease-Classification-Deep-Learning-Project', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -57,3 +70,14 @@ except Exception as e:
         raise e
 
 
+STAGE_NAME = "Evaluation stage"
+try:
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_evalution = EvaluationPipeline()
+   model_evalution.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+
+except Exception as e:
+        logger.exception(e)
+        raise e
