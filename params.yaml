@@ -1,8 +1,8 @@
-AUGMENTATION: False
+AUGMENTATION: True
 IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
 BATCH_SIZE: 16
 INCLUDE_TOP: False # since we are using transfer learning we do not need the top layer
-EPOCHS: 1 # only one epoch training  we have to change according to the error/ Accurracy change it to 200 to 300
+EPOCHS: 3 # only one epoch training  we have to change according to the error/ Accurracy change it to 200 to 300
 CLASSES: 2
 WEIGHTS: imagenet
 LEARNING_RATE: 0.08

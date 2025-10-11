@@ -449,3 +449,118 @@ x==========x]
 [2025-10-11 18:33:49,658: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-10-11 18:49:50,896: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-10-11 18:49:50,932: INFO: helpers: Accessing as Harishrsharma]
+[2025-10-11 18:49:51,434: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Harishrsharma/Kidney-Disease-Classification-Deep-Learning-Project "HTTP/1.1 200 OK"]
+[2025-10-11 18:49:51,924: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-10-11 18:49:51,955: INFO: helpers: Initialized MLflow to track repo "Harishrsharma/Kidney-Disease-Classification-Deep-Learning-Project"]
+[2025-10-11 18:49:51,955: INFO: helpers: Repository Harishrsharma/Kidney-Disease-Classification-Deep-Learning-Project initialized!]
+[2025-10-11 18:49:54,098: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-10-11 18:49:54,102: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 18:49:54,114: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 18:49:54,117: INFO: common: created directory at: artifacts]
+[2025-10-11 18:49:54,119: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-11 18:49:54,119: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-11 18:50:30,239: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-11 18:50:31,410: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-10-11 18:50:31,410: INFO: main: *******************]
+[2025-10-11 18:50:31,412: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-10-11 18:50:31,413: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 18:50:31,423: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 18:50:31,423: INFO: common: created directory at: artifacts]
+[2025-10-11 18:50:31,423: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-11 18:50:32,823: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-10-11 18:50:33,589: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-10-11 18:50:33,589: INFO: main: *******************]
+[2025-10-11 18:50:33,590: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-10-11 18:50:33,595: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 18:50:33,600: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 18:50:33,601: INFO: common: created directory at: artifacts]
+[2025-10-11 18:50:33,602: INFO: common: created directory at: artifacts\training]
+[2025-10-11 18:54:45,393: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-10-11 18:54:45,398: INFO: main: *******************]
+[2025-10-11 18:54:45,398: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-10-11 18:54:45,403: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 18:54:45,415: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 18:54:45,421: INFO: common: created directory at: artifacts]
+[2025-10-11 18:55:12,763: INFO: common: json file saved at: scores.json]
+[2025-10-11 18:55:12,764: INFO: common: json file saved at: scores.json]
+[2025-10-11 18:55:15,715: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2025-10-11 18:55:16,690: INFO: builder_impl: Assets written to: C:\Users\91773\AppData\Local\Temp\tmp0tyljlzk\model\data\model\assets]
+[2025-10-11 19:04:29,262: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-10-11 19:20:08,693: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-10-11 19:20:08,697: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 19:20:08,704: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 19:20:08,706: INFO: common: created directory at: artifacts]
+[2025-10-11 19:20:08,706: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-11 19:20:08,707: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-11 19:20:38,986: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-10-11 19:20:39,848: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-10-11 19:21:01,899: INFO: stage_02_prepare_base_model: *******************]
+[2025-10-11 19:21:01,899: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-10-11 19:21:01,909: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 19:21:01,909: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 19:21:01,909: INFO: common: created directory at: artifacts]
+[2025-10-11 19:21:01,909: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-11 19:21:03,339: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-10-11 19:21:03,966: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-10-11 19:21:13,589: INFO: stage_03_model_training: *******************]
+[2025-10-11 19:21:13,589: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-10-11 19:21:13,595: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 19:21:13,595: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 19:21:13,600: INFO: common: created directory at: artifacts]
+[2025-10-11 19:21:13,601: INFO: common: created directory at: artifacts\training]
+[2025-10-11 19:24:39,672: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-10-11 19:27:04,771: INFO: stage_04_model_evaluation: *******************]
+[2025-10-11 19:27:04,772: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-10-11 19:27:04,776: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 19:27:04,780: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 19:27:04,780: INFO: common: created directory at: artifacts]
+[2025-10-11 19:27:26,527: INFO: common: json file saved at: scores.json]
+[2025-10-11 19:27:26,529: INFO: common: json file saved at: scores.json]
+[2025-10-11 19:27:26,531: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-10-11 19:30:21,091: INFO: stage_02_prepare_base_model: *******************]
+[2025-10-11 19:30:21,091: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-10-11 19:30:21,091: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 19:30:21,103: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 19:30:21,104: INFO: common: created directory at: artifacts]
+[2025-10-11 19:30:21,105: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-10-11 19:30:21,906: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-10-11 19:30:22,232: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-10-11 19:30:31,506: INFO: stage_03_model_training: *******************]
+[2025-10-11 19:30:31,509: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-10-11 19:30:31,512: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 19:30:31,514: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 19:30:31,515: INFO: common: created directory at: artifacts]
+[2025-10-11 19:30:31,516: INFO: common: created directory at: artifacts\training]
+[2025-10-11 19:34:06,140: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-10-11 19:34:22,599: INFO: stage_04_model_evaluation: *******************]
+[2025-10-11 19:34:22,599: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-10-11 19:34:22,599: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\config\config.yaml]
+[2025-10-11 19:34:22,605: INFO: common: YAML file loaded successfully: D:\Kidney-Disease-Classification-Deep-Learning-Project\params.yaml]
+[2025-10-11 19:34:22,610: INFO: common: created directory at: artifacts]
+[2025-10-11 19:34:47,172: INFO: common: json file saved at: scores.json]
+[2025-10-11 19:34:47,175: INFO: common: json file saved at: scores.json]
+[2025-10-11 19:34:47,176: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
